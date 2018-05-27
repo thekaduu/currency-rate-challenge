@@ -1,5 +1,5 @@
 
-describe CurrencyRateService, "#d" do
+describe "Testando Travis" do
     context "primeiro teste no ruby" do
         it "deve retornar 1" do
             expect(1).to eq 1
