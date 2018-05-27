@@ -35,8 +35,10 @@ GEM
       tilt (~> 2.0)
     tilt (2.0.8)
 
-PLATFORMS
+PLATFORMSs
+  ruby
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   dotenv
