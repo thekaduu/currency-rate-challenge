@@ -9,9 +9,4 @@ class Quote
     def to_hash
         {:currency => @currency, :price => @price, :date => @date}
     end
-
-    def to_s
-        to_hash.to_s
-    end
-
 end

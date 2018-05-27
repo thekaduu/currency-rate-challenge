@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rack'
-gem 'rack-test'
 gem 'sinatra'
 gem 'rake'
+gem 'dotenv'
 
 group :development, :test do
-  gem 'rspec', '~> 3.7'
+  gem 'rspec'
+  gem 'rspec-mocks'
+  gem 'rack-test'
+  gem 'faker'
 end
