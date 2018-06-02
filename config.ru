@@ -1,7 +1,8 @@
+require './app'
 require 'sinatra/base'
 require 'dotenv'
+require 'controllers/home_controller'
 
 Dotenv.load
-Dir.glob('./app/{services,controllers}/*.rb').each { |file| require file }
 
 map('/api/v1/currencyrate') { run HomeController }

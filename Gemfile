@@ -12,4 +12,5 @@ group :development, :test do
   gem 'rack-test'
   gem 'faker'
   gem 'simplecov', require: false
+  gem 'rubocop', require: false
 end
