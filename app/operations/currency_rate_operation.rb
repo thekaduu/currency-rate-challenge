@@ -11,7 +11,7 @@ class CurrencyRateOperation
   # @return [hash] com chave sendo uma data e o valor todas as cotacoes
   # para esta data
   def get_quotes_where_date_range(data_range, currencies)
-    facade = CurrencyRateFacade.new
+    facade = CurrencyRateFacade.new ENV['ACCESS_KEY']
     currencies.each do |currency|
       facade.add_currency(currency)
     end
