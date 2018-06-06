@@ -20,3 +20,14 @@ Implementação do [GraphQL](https://graphql.org/)
 
 
 Este repositório faz o deploy automático para o [Heroku](https://www.heroku.com/) na seguinte url: [https://currency-rate-challenge.herokuapp.com/api/v1/currencyrate](https://currency-rate-challenge.herokuapp.com/api/v1/currencyrate)
+
+
+Rodando a aplicação
+-------------------
+
+1. Tenha o [Bundler](https://bundler.io/) instalado e execute o comando para instalar as dependências do projeto
+    >  $ bundle install
+2. Para subir o servidor web, basta executar o rackup na raiz do projeto
+    > $ bundle exec bundle
+
+1. Com o servidor web rodando, basta acessar a url [localhost:9292](http://localhost:9292/api/v1/currencyrate)
