@@ -1,4 +1,3 @@
-require 'faker'
 require 'libs/currency_rate/currency_rate_facade'
 
 describe CurrencyRateFacade, 'where_between' do
