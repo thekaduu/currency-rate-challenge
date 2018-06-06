@@ -1,5 +1,4 @@
 require 'libs/currency_rate/drivers/currency_layer_driver'
-require 'dotenv'
 
 # Cria uma instancia para consultar uma api de taxa de cambio
 # author Carlos Eduardo L Braz
