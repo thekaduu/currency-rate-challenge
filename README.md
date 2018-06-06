@@ -28,6 +28,6 @@ Rodando a aplicação
 1. Tenha o [Bundler](https://bundler.io/) instalado e execute o comando para instalar as dependências do projeto
     >  $ bundle install
 2. Para subir o servidor web, basta executar o rackup na raiz do projeto
-    > $ bundle exec bundle
+    > $ bundle exec rackup
 
 1. Com o servidor web rodando, basta acessar a url [localhost:9292](http://localhost:9292/api/v1/currencyrate)
