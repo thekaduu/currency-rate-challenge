@@ -1,5 +1,4 @@
 require 'libs/currency_rate/currency_rate_facade'
-
 require 'json'
 
 # Classe responsavel por efetuar a consulta das taxas cambiais

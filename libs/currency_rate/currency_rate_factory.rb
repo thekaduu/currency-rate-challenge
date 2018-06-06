@@ -11,11 +11,9 @@ class CurrencyRateFactory
 
     case driver
     when 'currency_layer'
-      currency_rate_instance = CurrencyLayerDriver.new access_key
+      CurrencyLayerDriver.new access_key
     else
       raise 'Driver não encontrado'
     end
-
-    currency_rate_instance
   end
 end

@@ -1,2 +1,2 @@
-$LOAD_PATH.unshift('.')
-$LOAD_PATH.unshift('./app')
+$LOAD_PATH.unshift(File.expand_path('.', __dir__))
+$LOAD_PATH.unshift(File.expand_path('app', __dir__))

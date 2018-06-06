@@ -1,8 +1,7 @@
-require './app'
-require 'sinatra/base'
-require 'dotenv'
-require 'controllers/home_controller'
+$LOAD_PATH.unshift(File.expand_path('.', __dir__))
+$LOAD_PATH.unshift(File.expand_path('app', __dir__))
 
-Dotenv.load
+require 'app'
+require 'controllers\currency_rate_controller'
 
-map('/api/v1/currencyrate') { run HomeController }
+run CurrencyRateController

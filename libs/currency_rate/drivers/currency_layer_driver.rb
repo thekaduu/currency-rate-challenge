@@ -6,9 +6,9 @@ require 'libs/currency_rate/models/quote'
 # author Carlos Eduardo L. Braz
 class CurrencyLayerDriver
   attr_accessor :currencies
+  URI_API = 'http://apilayer.net/api'.to_sym
 
   def initialize(access_key)
-    @uri = 'http://apilayer.net/api'
 
     @access_key = access_key
     @request_parameters = {access_key: @access_key}
@@ -17,7 +17,13 @@ class CurrencyLayerDriver
 
   def where_date(date)
     formatted_date = date.strftime '%Y-%m-%d'
-    uri = "#{@uri}/historical?" + make_query_string + "&date=#{formatted_date}"
+    uri = "#{URI_API}/historical?" + make_query_string + "&date=#{formatted_date}"
+    make_request uri
+  end
+
+  private
+
+  def make_request(uri)
     response = Net::HTTP.get_response(URI(uri))
     response_hash = JSON.parse response.body
     if response_hash['succecss'] == 'false'
@@ -27,8 +33,6 @@ class CurrencyLayerDriver
       to_quotes response_hash
     end
   end
-
-  private
 
   def make_query_string
     parameters = @request_parameters
