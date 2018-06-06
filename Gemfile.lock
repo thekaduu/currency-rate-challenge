@@ -64,12 +64,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  faker
   rack
-  rack-test
   rake
   rspec
-  rspec-mocks
   rubocop
   simplecov
   sinatra
